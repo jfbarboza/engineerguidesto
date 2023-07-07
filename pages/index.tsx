@@ -1,17 +1,18 @@
-import Link from "next/link";
 import { getFeaturedEvents } from "../dummy-data";
 import EventsList from "../components/events/events-list";
+import Button from "@/components/ui/button";
+import classes from "./index.module.css";
 export default function Home() {
   return (
     <>
-      <h1>Engineer Guides To</h1>
-      <ul>
-        <li><Link href="/books">Books</Link></li>
-        <li><Link href="/authors">Authors</Link></li>
-        <li><Link href="/about">About</Link></li>
-        <li><Link href="/news">News</Link></li>
-        <li><Link href="/contact">Contact</Link></li>
-      </ul>
+      <section className={classes.main}>
+        <div>
+          <h1>The guide books for smart people.</h1>
+          <Button link="/books" color="blue">Browse Books</Button>
+        </div>
+        
+      </section>
+
       <EventsList events={getFeaturedEvents()} />
     </>
   )

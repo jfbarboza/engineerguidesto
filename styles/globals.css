@@ -1,18 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap');
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.eot');
+  src: url('/fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.woff2') format('woff2'),
+      url('/fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.woff') format('woff'),
+      url('/fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.ttf') format('truetype'),
+      url('/fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'StandardShaded Sans';
+  src: url('/fonts/StandardShaded-Sans/StandardShaded-Sans.eot');
+  src: url('/fonts/StandardShaded-Sans/StandardShaded-Sans.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/StandardShaded-Sans/StandardShaded-Sans.woff2') format('woff2'),
+      url('/fonts/StandardShaded-Sans/StandardShaded-Sans.woff') format('woff'),
+      url('/fonts/StandardShaded-Sans/StandardShaded-Sans.ttf') format('truetype'),
+      url('/fonts/StandardShaded-Sans/StandardShaded-Sans.svg#StandardShaded-Sans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Open Sans', 'Lato', sans-serif;
+  margin: 0;
 }
 
-h1,
+h1{
+  font-family: 'Gilroy', sans-serif;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'StandardShaded Sans', sans-serif;
 }

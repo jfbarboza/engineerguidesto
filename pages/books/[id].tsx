@@ -1,11 +1,22 @@
+import { Fragment } from 'react';
 import { useRouter } from 'next/router';
+import { getBookById } from '@/dummy-data';
+import EventSummary from '@/components/event-detail/event-summary';
+import BookData from '@/components/books/book-detail/book-data';
+import EventContent from '@/components/event-detail/event-content';
 
 function BookPage(){
     const router = useRouter();
-    console.log(`router: ${router.pathname}`);
-    const { id } = router.query;
-    console.log(`id: ${id}`);
-    return <h1>Book Page for </h1>
+    const bookId = router.query.id;
+    const book = getBookById(bookId);
+    
+    return (
+        <Fragment>
+            <EventSummary title={book?.title} />
+            <BookData image={book?.cover} imageAlt={book?.title} />
+            <EventContent> <p>{book?.description}</p> </EventContent>
+        </Fragment>
+    );
 }
 
 export default BookPage;

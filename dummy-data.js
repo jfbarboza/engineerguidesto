@@ -31,8 +31,46 @@ const DUMMY_EVENTS = [
   },
 ];
 
+const DUMMY_BOOKS = [
+  {
+    id: 'b1',
+    title: 'The Engineer\'s Guide to:',
+    subtitle: 'Weight Loss',
+    description: 'This book will help you lose weight.',
+    cover: 'images/weight-loss-book.jpg',
+    thumb: 'images/weight-loss-book-thumb.jpg',
+    isPublished: true,
+  },
+  {
+    id: 'b2',
+    title: 'The Engineer\'s Guide to:',
+    subtitle: 'Grilling',
+    description: 'This book will help you grill.',
+    cover: 'images/grilling-book.jpg',
+    thumb: 'images/grilling-book-thumb.jpg',
+    isPublished: true,
+  },
+  {
+    id: 'b3',
+    title: 'The Engineer\'s Guide to:',
+    subtitle: 'Body Building',
+    description: 'This book will help you build your body.',
+    cover: 'images/body-building-book.jpg',
+    thumb: 'images/body-building-book-thumb.jpg',
+    isPublished: false,
+  },
+];
+
+export function getPublishedBooks() {
+  return DUMMY_BOOKS.filter((book) => book.isPublished);
+}
+
 export function getFeaturedEvents() {
   return DUMMY_EVENTS.filter((event) => event.isFeatured);
+}
+
+export function getAllBooks() {
+  return DUMMY_BOOKS;
 }
 
 export function getAllEvents() {
@@ -52,4 +90,8 @@ export function getFilteredEvents(dateFilter) {
 
 export function getEventById(id) {
   return DUMMY_EVENTS.find((event) => event.id === id);
+}
+
+export function getBookById(id) {
+  return DUMMY_BOOKS.find((book) => book.id === id);
 }
