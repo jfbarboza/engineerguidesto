@@ -1,24 +1,19 @@
 import Link from 'next/link';
 import classes from './button.module.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function Button(props: any){
     const { color, hamburger } = props;
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const btnClasses = `
         ${classes.btn}
-        ${color =='blue' ?  classes.blue : ''}`;
+        ${color =='blue' ?  classes.blue : ''}
+        ${menuIsOpen ? classes.open : ''}
+        ${hamburger ? classes.hamburger : ''}`;
     const handleClick = () => {
         setMenuIsOpen(!menuIsOpen);
     }
 
-    let hamburgerClasses = `
-        ${classes.hamburger}
-        ${menuIsOpen ? classes.open : ''}`;
-    // useEffect(() => {
-    //     console.log(`menuIsOpen: ${menuIsOpen}`);
-    //     setMenuIsOpen(isOpen);
-    // }, [isOpen, menuIsOpen]);
     if(props.link){
         return(
             <Link href={props.link} className={btnClasses} >
@@ -28,7 +23,7 @@ function Button(props: any){
     }
     if(props.hamburger){
         return(
-            <button className={btnClasses} onClick={handleClick}><span className={ hamburgerClasses }></span></button>
+            <button className={btnClasses} onClick={handleClick}><span className={ classes.hamburger }></span></button>
         );
     }
     return(

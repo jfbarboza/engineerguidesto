@@ -35,21 +35,21 @@
   color: #10429b !important;
 }
 
-.hamburger{
+.hamburger span{
   width: 2rem;
   height: 3px;
-  background-color: #fff;
+  background-color: #fff !important;
   position: relative;
   display: block;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger::after {
+.hamburger span::after {
   content: '';
   width: 2rem;
   height: 3px;
-  background-color: #fff;
+  background-color: #fff !important;
   position: absolute;
   top: 0.7rem;
   left: 0;
@@ -57,11 +57,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger::before {
+.hamburger span::before {
   content: '';
   width: 2rem;
   height: 3px;
-  background-color: #fff;
+  background-color: #fff !important;
   position: absolute;
   top: -0.7rem;
   left: 0;
@@ -69,17 +69,22 @@
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger.open {
+.hamburger:hover{
+  background-color: #fdaa06;
+  color: #fff;
+}
+
+.open .hamburger {
   transform: rotate(45deg);
   background-color: #fdaa06;
 }
 
-.hamburger.open::after {
+.open .hamburger::after {
   transform: rotate(90deg);
   top: 0;
   background-color: #fdaa06;
 }
 
-.hamburger.open::before {
+.open .hamburger::before {
   display: none;
 }

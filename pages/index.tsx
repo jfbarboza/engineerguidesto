@@ -8,10 +8,10 @@ export default function Home() {
       <section className={classes.main}>
         <div className={classes.content}>
           <div className={classes.image}>
-            <img src="/images/smart-people.png" alt="smart people" />
+            <img src="/images/smart-people.png" alt="smart people - Image by syarifahbrit on Freepik" />
           </div>
           <div>
-            <h1>The guide books for <span className={classes.underline}>smart</span> people.</h1>
+            <h1><span className={classes.underline}>Easy</span> guide books for <span className={classes.underline}>smart</span> people.</h1>
             <Button link="/books" color="blue">Browse Books</Button>
           </div>
         </div>
