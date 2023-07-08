@@ -6,7 +6,7 @@
   border: 1px solid #fdaa06;
   border-radius: 6px;
   color: #fff;
-  padding: 1rem 1.7rem;
+  padding: 1.2rem 1rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-family: 'Gilroy', sans-serif;
@@ -33,4 +33,58 @@
   background-color: #fff !important;
   border-color: #10429b !important;
   color: #10429b !important;
+}
+
+.hamburger span{
+  width: 2rem;
+  height: 3px;
+  background-color: #fff !important;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger span::after {
+  content: '';
+  width: 2rem;
+  height: 3px;
+  background-color: #fff !important;
+  position: absolute;
+  top: 0.7rem;
+  left: 0;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger span::before {
+  content: '';
+  width: 2rem;
+  height: 3px;
+  background-color: #fff !important;
+  position: absolute;
+  top: -0.7rem;
+  left: 0;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  background-color: #fdaa06;
+  color: #fff;
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+  background-color: #fdaa06;
+}
+
+.open .hamburger::after {
+  transform: rotate(90deg);
+  top: 0;
+  background-color: #fdaa06;
+}
+
+.open .hamburger::before {
+  display: none;
 }
