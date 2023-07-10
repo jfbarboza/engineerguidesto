@@ -43,12 +43,12 @@
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fdaa06;
+  color: var(--color-primary);
   font-size: 0.6rem;
 }
 
 .navigation a:visited {
-  color: #fdaa06;
+  color: var(--color-primary);
 }
 
 .navigation a:hover, .navigation a:active {

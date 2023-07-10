@@ -26,6 +26,84 @@
   font-display: swap;
 }
 
+:root{
+
+  /* Reference: https://ionicframework.com/docs/theming/color-generator */
+  /*
+  --ion-color-favorite: #69bb7b;
+  --ion-color-favorite-rgb: 105, 187, 123;
+  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite-contrast-rgb: 255, 255, 255;
+  --ion-color-favorite-shade: #5ca56c;
+  --ion-color-favorite-tint: #78c288;
+  */
+
+  /* Primary Color */
+  --color-primary: #fdaa06;
+  --color-primary-rgb: 253, 170, 5;
+  --color-primary-contrast: #fff;
+  --color-primary-contrast-rgb: 255, 255, 255;
+  --color-primary-shade: #d38e04;
+  --color-primary-tint: #fbbf3a;
+
+  /* Secondary Color */
+  --color-secondary: #10429b;
+  --color-secondary-rgb: 16, 66, 155;
+  --color-secondary-contrast: #fff;
+  --color-secondary-contrast-rgb: 255, 255, 255;
+  --color-secondary-shade: #0e3a7f;
+  --color-secondary-tint: #2350b9;
+
+  /* Dark Color */
+  --color-dark: #000;
+  --color-dark-rgb: 0, 0, 0;
+  --color-dark-contrast: #fff;
+  --color-dark-contrast-rgb: 255, 255, 255;
+  --color-dark-shade: #000;
+  --color-dark-tint: #1e1e1e;
+
+  /* Medium Color */
+  --color-medium: #989aa2;
+  --color-medium-rgb: 152, 154, 162;
+  --color-medium-contrast: #fff;
+  --color-medium-contrast-rgb: 255, 255, 255;
+  --color-medium-shade: #86888f;
+  --color-medium-tint: #a2a4ab;
+
+  /* Light Color */
+  --color-light: #fff;
+  --color-light-rgb: 255, 255, 255;
+  --color-light-contrast: #000;
+  --color-light-contrast-rgb: 0, 0, 0;
+  --color-light-shade: #e0e0e0;
+  --color-light-tint: #ffffff;
+
+  /* Success Color */
+  --color-success: #2a8e52;
+  --color-success-rgb: 42, 142, 82;
+  --color-success-contrast: #fff;
+  --color-success-contrast-rgb: 255, 255, 255;
+  --color-success-shade: #246846;
+  --color-success-tint: #3da463;
+
+  /* Warning Color */
+  --color-warning: #fdaa06;
+  --color-warning-rgb: 253, 170, 5;
+  --color-warning-contrast: #fff;
+  --color-warning-contrast-rgb: 255, 255, 255;
+  --color-warning-shade: #d38e04;
+  --color-warning-tint: #fbbf3a;
+
+  /* Danger Color */
+  --color-danger: #f53d3d;
+  --color-danger-rgb: 245, 61, 61;
+  --color-danger-contrast: #fff;
+  --color-danger-contrast-rgb: 255, 255, 255;
+  --color-danger-shade: #d32f2f;
+  --color-danger-tint: #f25454;
+
+}
+
 * {
   box-sizing: border-box;
 }

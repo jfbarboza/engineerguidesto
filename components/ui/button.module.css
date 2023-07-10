@@ -2,8 +2,8 @@
   text-decoration: none;
   cursor: pointer;
   font: inherit;
-  background-color: #fdaa06;
-  border: 1px solid #fdaa06;
+  background-color: var(--color-primary);;
+  border: 1px solid var(--color-primary);
   border-radius: 6px;
   color: #fff;
   padding: 1.2rem 1rem;
@@ -19,8 +19,8 @@
 .btn:hover,
 .btn:active {
   background-color: #fff;
-  border-color: #fdaa06;
-  color: #fdaa06;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .blue {
@@ -70,19 +70,19 @@
 }
 
 .hamburger:hover{
-  background-color: #fdaa06;
+  background-color: var(--color-primary);
   color: #fff;
 }
 
 .open .hamburger {
   transform: rotate(45deg);
-  background-color: #fdaa06;
+  background-color: var(--color-primary);
 }
 
 .open .hamburger::after {
   transform: rotate(90deg);
   top: 0;
-  background-color: #fdaa06;
+  background-color: var(--color-primary);
 }
 
 .open .hamburger::before {
