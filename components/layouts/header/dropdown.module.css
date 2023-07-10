@@ -1,0 +1,27 @@
+.dropdown{
+    position: fixed;
+    top: var(--header-mobile-height); 
+    z-index: 1001;
+    height: 0;
+    width: 100%;
+    display: none;
+}
+
+.dropdown li{
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+.dropdown li a{
+    font-size: 1.8rem;
+}
+
+.open{
+    height: calc(100vh - var(--header-mobile-height));
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
