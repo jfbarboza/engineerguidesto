@@ -12,6 +12,8 @@ function EventsList(props: any){
                     image={event.image}
                     date={event.date}
                     location={event.location}
+                    description={event.description}
+                    isFeatured={event.isFeatured}
                     key={event.id}/>
             ))}
         </ul>

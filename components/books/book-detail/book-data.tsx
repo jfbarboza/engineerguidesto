@@ -1,6 +1,6 @@
 import classes from './book-data.module.css';
 
-function BookData(props) {
+function BookData(props: any) {
   const { date, address, image, imageAlt } = props;
 
   return (
