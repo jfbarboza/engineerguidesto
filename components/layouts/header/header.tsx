@@ -3,6 +3,7 @@ import Button from "@/components/ui/button";
 import classes from "./header.module.css";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import TopNavigation from "./navigation";
 
 function Header(){
     const router = useRouter();
@@ -20,16 +21,7 @@ function Header(){
                     The Engineer&apos;s Guide to
                 </Link>
             </div>
-            <nav className={classes.navigation}>
-                <ul>
-                    <li>
-                        <Link href="/books">Books</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">About</Link>
-                    </li>
-                </ul>
-            </nav>
+            <TopNavigation />
             <div className={classes.mobile}>
                 <Button 
                     hamburger="true" 
