@@ -19,7 +19,7 @@
     border-radius: 35px;
     z-index: 1000;
     border: 0;
-    background: rgba(16,66,155,0.5);
+    background: var(--color-secondary-tint);
     min-width: 43px;
     min-height: 43px;
     opacity: 1;
@@ -27,7 +27,7 @@
 }
 
 .right_arrow:hover, .left_arrow:hover{
-    background: rgba(16,66,155,1);
+    background: var(--color-secondary);
 }   
 
 .right_arrow:before{
@@ -40,7 +40,7 @@
 
 .right_arrow:before, .left_arrow:before{
     font-size: 20px;
-    color: #fff;
+    color: var(--color-secondary-contrast);
     display: block;
     text-align: center;
     font-family: 'Open Sans';

@@ -11,7 +11,7 @@
 
 .logo {
   font-size: 2rem;
-  color: #000;
+  color: var(--color-dark);
   font-family: 'Gilroy', sans-serif;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
@@ -26,7 +26,7 @@
 }
 
 .logo a:visited {
-  color: #000;
+  color: var(--color-dark);
 }
 
 .navigation{
@@ -52,7 +52,7 @@
 }
 
 .navigation a:hover, .navigation a:active {
-  color: #000;
+  color: var(--color-dark);
 }
 
 .actions{
@@ -64,7 +64,7 @@
   width: 2rem;
   height: 0.2rem;
   position: relative;
-  background-color: #fff;
+  background-color: var(--color-light);
   cursor: pointer;
 }
 

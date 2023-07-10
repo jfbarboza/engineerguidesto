@@ -18,21 +18,21 @@
 
 .btn:hover,
 .btn:active {
-  background-color: #fff;
+  background-color: var(--color-primary-contrast);
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
 
 .blue {
-  background-color: #10429b !important;
-  border-color: #10429b !important;
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-secondary)!important;
 }
 
 .blue:hover,
 .blue:active {
-  background-color: #fff !important;
-  border-color: #10429b !important;
-  color: #10429b !important;
+  background-color: var(--color-secondary-contrast)!important;
+  border-color: var(--color-secondary) !important;
+  color: var(--color-secondary)!important;
 }
 
 .hamburger span{
