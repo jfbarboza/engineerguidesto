@@ -1,6 +1,6 @@
 .main{
     width: 100%;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - var(--header-mobile-height));
     background-color: #fdaa05;
     background-image: url('/images/grid-bg.png');
     background-repeat: repeat;
@@ -89,7 +89,7 @@
 @media (min-width: 768px){
 
     .main{
-        height: calc(100vh - 6rem);
+        height: calc(100vh - var(--header-desktop-height));
     }
     .content{
         width: 100%;
@@ -124,6 +124,6 @@
 
 @media (max-width: 1230px){
     .main{
-        height: calc(100vh - 10rem);
+        height: calc(100vh - var(--header-mobile-height));
     }    
 }
