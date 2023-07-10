@@ -1,9 +1,10 @@
-import { getFeaturedEvents } from "../dummy-data";
+import { getFeaturedEvents, getAllBooks } from "../dummy-data";
 import EventsList from "../components/events/events-list";
 import Button from "@/components/ui/button";
 import classes from "./index.module.css";
 import path from 'path';
 import fs from 'fs/promises';
+import BooksCarousel from "@/components/books/books-carousel/books-carousel";
 
 export default function Home(props: any) {
   const { featuredEvents } = props;
@@ -34,7 +35,9 @@ export default function Home(props: any) {
           </div>
         </div>
       </section>
-
+      <section>
+        <BooksCarousel books={getAllBooks()}/>
+      </section>
       <EventsList events={featuredEvents} />
     </>
   )
@@ -48,7 +51,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      featuredEvents
+      featuredEvents,
     },
     revalidate: 1800
   }

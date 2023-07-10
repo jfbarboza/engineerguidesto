@@ -1,0 +1,7 @@
+.carousel_item{
+    text-align: center;
+}
+
+.carousel_item img{
+    max-width: 250px;
+}
