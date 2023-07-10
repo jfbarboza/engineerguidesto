@@ -2,28 +2,6 @@
     display: none;
 }
 
-.navigation li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 2rem;
-}
-
-.navigation a {
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--color-primary);
-    font-size: 0.6rem;
-}
-
-.navigation a:visited {
-    color: var(--color-primary);
-}
-
-.navigation a:hover, .navigation a:active {
-    color: var(--color-dark);
-}
-
 @media (min-width: 1230px) {
     .navigation {
         display: block;

@@ -1,16 +1,13 @@
 import classes from './navigation.module.css';
 import Link from 'next/link';
+import NavigationItem from './navigationItem';
 
 function TopNavigation(){
     return(
         <nav className={classes.navigation}>
             <ul>
-                <li>
-                    <Link href="/books">Books</Link>
-                </li>
-                <li>
-                    <Link href="/about">About</Link>
-                </li>
+                <NavigationItem link="/">Home</NavigationItem>
+                <NavigationItem link="/books">Books</NavigationItem>
             </ul>
         </nav>
     )
