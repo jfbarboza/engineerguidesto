@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   padding: 1rem 10%;
-  height: 10rem;
+  height: var(--header-mobile-height);
   background-color: #fff;
 }
 
@@ -93,7 +93,7 @@
   .header {
     flex-direction: row;
     justify-content: space-between;
-    height: 6rem;
+    height: var(--header-desktop-height);
   }
 
   .logo {

@@ -102,6 +102,12 @@
   --color-danger-shade: #d32f2f;
   --color-danger-tint: #f25454;
 
+  /* Layout Sizes */
+
+  --header-mobile-height: 10rem;
+  --header-desktop-height: 6rem;
+  --footer-height: 6rem;
+
 }
 
 * {
