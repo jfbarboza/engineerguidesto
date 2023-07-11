@@ -15,18 +15,6 @@ function Dropdown( props: any ){
     const dropdownClasses = `
         ${classes.dropdown}
         ${props.isOpen ?  classes.open : ''}`;
-    // useEffect(() => {
-    //     console.log(props.isOpen);
-    //     if(props.isOpen){
-    //         dropdownClasses.current = `
-    //         ${classes.dropdown}
-    //         ${classes.dropDownOpen}`;
-    //     }else{
-    //         dropdownClasses.current = ``;
-    //     }
-    // }, [props.isOpen]);
-
-
 
     return(
         <div className={dropdownClasses}>
