@@ -7,3 +7,11 @@ export type EventItemType = {
     image: string,
     isFeatured: boolean
 }
+
+export type NavigationMenuType = NavigationMenuItemType[];
+
+export type NavigationMenuItemType = {
+    label: string,
+    link: string,
+    newWindow?: boolean    
+}

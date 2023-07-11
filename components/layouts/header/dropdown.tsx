@@ -1,6 +1,7 @@
 import NavigationItem from "./navigationItem";
 import { useEffect, useRef, useState } from "react";
 import classes from "./dropdown.module.css";
+import { menu } from "../../../core/menu"
 
 function Dropdown( props: any ){
     const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -15,11 +16,13 @@ function Dropdown( props: any ){
     const dropdownClasses = `
         ${classes.dropdown}
         ${props.isOpen ?  classes.open : ''}`;
-
+    
     return(
         <div className={dropdownClasses}>
-            <NavigationItem link="/">Home</NavigationItem>
-            <NavigationItem link="/books">Books</NavigationItem>
+            { menu.map(item => {return(
+                <NavigationItem key={item.label} link={item.link}>{item.label}</NavigationItem>
+                )})
+            }
         </div>
     )
 }
