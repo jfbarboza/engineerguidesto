@@ -1,0 +1,27 @@
+.nav_item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.nav_item a {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 0.6rem;
+}
+
+.nav_item a:visited {
+    color: var(--color-primary);
+}
+
+.nav_item a:hover, .navigation a:active {
+    color: var(--color-dark);
+}
+
+@media (min-width: 1230px) {
+    .nav_item a {
+        font-size: 1rem;
+    }     
+}
