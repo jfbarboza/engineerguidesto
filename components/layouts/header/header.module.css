@@ -94,6 +94,9 @@
     flex-direction: row;
     justify-content: space-between;
     height: var(--header-desktop-height);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
   }
 
   .logo {

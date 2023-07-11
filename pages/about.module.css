@@ -1,0 +1,40 @@
+.about_content{
+    padding: 1rem 10%;
+}
+
+.questions_section{
+    margin: 4rem 0;
+}
+
+.page_title{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdaa05;
+    background-image: url('/images/grid-bg.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.page_title h1{
+    font-size: 2rem;
+    color: var(--color-primary-contrast);
+}   
+
+.align_left{
+    text-align: left;
+}
+
+.align_right{
+    text-align: right;
+}
+
+@media screen and (min-width: 1230px){
+    .about_content{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+}
