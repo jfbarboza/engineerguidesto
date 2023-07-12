@@ -33,7 +33,7 @@ function Header(){
                     handleMobileMenu={handleMobileMenu}
                     isOpen={mobileMenuOpen}
                 ></Button>
-                <Dropdown isOpen={mobileMenuOpen} />
+                <Dropdown isOpen={mobileMenuOpen} handleMobileMenu={handleMobileMenu} />
             </div>
             <div className={classes.actions}>
                 <Button link="https://www.amazon.com">Buy our Books</Button>

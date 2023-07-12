@@ -12,7 +12,6 @@ function Dropdown( props: any ){
             setMenuIsOpen(false);
         }
     }, [props.isOpen]);
-
     const dropdownClasses = `
         ${classes.dropdown}
         ${props.isOpen ?  classes.open : ''}`;
@@ -20,7 +19,13 @@ function Dropdown( props: any ){
     return(
         <div className={dropdownClasses}>
             { menu.map(item => {return(
-                <NavigationItem key={item.label} link={item.link}>{item.label}</NavigationItem>
+                <NavigationItem 
+                    key={item.label} 
+                    link={item.link}
+                    handleMobileMenu={props.handleMobileMenu}
+                    >{item.label}
+                    
+                </NavigationItem>
                 )})
             }
         </div>

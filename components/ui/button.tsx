@@ -18,11 +18,7 @@ function Button(props: any){
         ${color =='blue' ?  classes.blue : ''}
         ${menuIsOpen ? classes.open : ''}
         ${hamburger ? classes.hamburger : ''}`;
-    
-    const handleClick = () => {
-        setMenuIsOpen(!menuIsOpen);
-        return menuIsOpen;
-    }
+
 
     if(props.link){
         return(
