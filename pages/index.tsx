@@ -38,7 +38,7 @@ export default function Home(props: any) {
       <section>
         <BooksCarousel books={getAllBooks()}/>
       </section>
-      <EventsList events={featuredEvents} />
+      {/* <EventsList events={featuredEvents} /> */}
     </>
   )
 }
