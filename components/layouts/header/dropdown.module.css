@@ -1,10 +1,11 @@
 .dropdown{
     position: fixed;
-    top: var(--header-mobile-height); 
+    top: 100vh;
     z-index: 1001;
     height: 0;
+    transition: height 1s ease-in-out;
     width: 100%;
-    display: none;
+    transform-origin: 0% 50%;
 }
 
 .dropdown li{
@@ -18,10 +19,12 @@
 
 .open{
     height: calc(100vh - var(--header-mobile-height));
+    top: var(--header-mobile-height); 
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     left: 0;
+    transition: height 1s ease-in-out;
 }
