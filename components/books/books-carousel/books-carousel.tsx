@@ -33,7 +33,6 @@ const CustomRightArrow = ({ onClick }: CustomRightArrowProps) => {
 
 function BooksCarousel( props: any){
     const { books } = props;
-    console.log(`books: ${books}`);
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.

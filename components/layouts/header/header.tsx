@@ -9,7 +9,6 @@ function Header(){
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     
     const handleMobileMenu = () => {
-        console.log('clicked');
         setMobileMenuOpen(!mobileMenuOpen);
         if(mobileMenuOpen){
             document.body.style.overflow = 'unset';
